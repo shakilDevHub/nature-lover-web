@@ -1,0 +1,273 @@
+/* Commone css start =============== */
+:root{
+    --primary-color: #DDC8AF;
+    --secondary-color: #2A2A2A;
+    --common1: #ffffff;
+}
+/* Commone css end =============== */
+
+#hero{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../img/contact-hero.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* contact css start============ */
+#contact{
+    width: 100%;
+}
+#contact .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-direction: row;
+    flex-wrap: wrap;
+    animation: contactAnimation 2s linear infinite alternate;
+}
+@keyframes contactAnimation{
+    0%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(10px);
+    }
+}
+#contact .container .left, #contact .container .right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 30px;
+    border-radius: 0;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.25);
+    margin: 10px 0;
+}
+/* left start------- */
+#contact .container .left{
+    flex-basis: 65%;
+    align-items: left;
+}
+#contact .container .left input{
+    width: 100%;
+    margin: 10px 0;
+}
+#contact .container .left .inputBox{
+    width: 100%;
+    margin: 10px 0;
+    padding: 15px 20px;
+    border: 1px solid #CACACA;
+    color: var(--secondary-color);
+    font-family: 'Poppins', sans-serif;
+}
+#contact h3{
+    display: block;
+    padding-bottom: 25px;
+    text-align: left;
+}
+/* left end------- */
+
+/* right start------- */
+#contact .container .right{
+    flex-basis: 30%;
+}
+/* right top start--- */
+#contact .right-top{
+    padding-bottom: 50px;
+}
+#contact .right .right-top li{
+    display: block;
+    margin: 10px 0;
+    text-align: left;
+}
+#contact .right .right-top a{
+    color: var(--secondary-color);
+}
+#contact .right .right-top a span{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    background: var(--primary-color);
+    margin-right: 15px;
+    transition: all 0.3s linear;
+}
+#contact .right .right-top a span i{
+    font-size: 25px;
+    line-height: 50px;
+}
+#contact .right .right-top a span:hover{
+    transform: rotate(360deg);
+    background: var(--secondary-color);
+    color: var(--primary-color);
+}
+/* right top end--- */
+
+/* right bottom start ---*/
+#contact .social a{
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    margin: 10px 10px 10px 0;
+    text-align: center;
+    color: var(--secondary-color);
+    transition: all 0.3s linear;
+}
+#contact .social a i{
+    font-size: 25px;
+    line-height: 50px;
+}
+#contact .social a:hover{
+    transform: translateY(-20%) rotate(360deg);
+    background: var(--secondary-color);
+    color: var(--primary-color);
+}
+/* right bottom end--- */
+/* right end------- */
+/* contact css end============ */
+
+@media only screen and (max-width: 600px)
+{
+    #header .logo {
+        width: 150px;
+        height: auto;
+    }
+    ul {
+        text-align: center;
+    }
+    #footer .footer-logo {
+        width: 130px;
+    }
+    h1 {
+        font-size: 45px;
+        line-height: 55px;
+    }
+    h2{
+        font-size: 35px;
+        line-height: 45px;
+        padding-bottom: 25px;
+    }
+    h3{
+        font-size: 26px;
+        line-height: 40px;
+    }
+    p{
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .sidebar{
+        display: none;
+    }
+}
+@media only screen and (max-width: 850px) and (min-width: 600px)
+{
+    #header .logo {
+        width: 200px;
+        height: auto;
+    }
+    ul {
+        text-align: center;
+    }
+    #footer .footer-logo {
+        width: 130px;
+    }
+    h1 {
+        font-size: 45px;
+        line-height: 55px;
+    }
+    h2{
+        font-size: 35px;
+        line-height: 45px;
+        padding-bottom: 25px;
+    }
+    h3{
+        font-size: 24px;
+        line-height: 36px;
+    }
+    p{
+        font-size: 16px;
+        line-height: 22px;
+    }
+    #footer .footer-logo {
+        width: 160px;
+    }
+    .sidebar{
+        display: none;
+    }
+}
+@media only screen and (min-width: 900px) and (max-width: 1300px){
+    #contact .container .left {
+        flex-basis: 50%;
+    }
+    #contact .container .right {
+        flex-basis: 45%;
+    }
+}
+@media only screen and (min-width: 700px) and (max-width: 900px){
+    #contact .container .left {
+        flex-basis: 100%;
+        align-items: left;
+    }
+    #contact .container .right {
+        flex-basis: 100%;
+        flex-direction: row;
+    }
+    #contact .container .right {
+        flex-basis: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    #contact .right-top {
+        padding-bottom: 0;
+    }
+}
+@media only screen and (min-width: 500px) and (max-width: 700px){
+    #contact .container .left {
+        flex-basis: 100%;
+        align-items: left;
+    }
+    #contact .container .right {
+        flex-basis: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    #contact .right-bottom li {
+        display: inline;
+    }
+    #contact .right-top {
+        padding-bottom: 0;
+    }
+    #contact .social a {
+        margin: 15px 10px 15px 0;
+    }
+    #contact .right-bottom h3{
+        display: none;
+    }
+}
+@media only screen and (min-width: 0px) and (max-width: 500px){
+    #contact .container .left {
+        flex-basis: 100%;
+        align-items: left;
+    }
+    #contact .container .right {
+        flex-basis: 100%;
+        flex-direction: column;
+    }
+    #contact .right-bottom li {
+        display: inline-block;
+    }
+    #contact .right-top {
+        padding-bottom: 0;
+    }
+    #contact .social a {
+        margin: 15px 10px 15px 0;
+    }
+    #contact .right-bottom h3{
+        display: none;
+    }
+}

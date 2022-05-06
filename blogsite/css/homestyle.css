@@ -1,0 +1,354 @@
+/* Commone css start =============== */
+:root{
+    --primary-color: #DDC8AF;
+    --secondary-color: #2A2A2A;
+    --common1: #ffffff;
+}
+/* Commone css end=============== */
+
+
+/* about css start =============== */
+#about .container{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.left {
+	display: flex;
+	align-items: center;
+}
+#about .imgbox{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    animation: about-img 1s linear infinite alternate;
+}
+@keyframes about-img {
+    0%{
+        transform: translateY(-20px) scale(1);
+    }
+    50%{
+        transform: translateY(0) scale(1.05);
+    }
+    100%{
+        transform: translateY(20px) scale(1);
+    }
+}
+#about .imgbox img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+#about .social a{
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    margin: 10px 10px 10px 0;
+    text-align: center;
+    color: var(--secondary-color);
+    transition: all 0.3s linear;
+}
+#about .social a i{
+    font-size: 25px;
+    line-height: 50px;
+}
+#about .social a:hover{
+    transform: translateY(-20%) rotate(360deg);
+    background: var(--secondary-color);
+    color: var(--primary-color);
+}
+#about .content{
+    padding-left: 50px;
+}
+#about h2{
+    text-align: left;
+}
+#about p{
+    padding-bottom: 40px;
+}
+/* about css end =============== */
+
+/* featured css start=============== */
+#featured{
+    width: 100%;
+    height: auto;
+    background: url(../img/sec-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#featured .row1{
+    padding: 10px 0;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    grid-gap: 25px;
+}
+#featured .row1 .card1{
+    position: relative;
+    overflow: hidden;
+    height: 350px;
+    cursor: pointer;
+}
+#featured .row1 .card1 img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.4s linear;
+}
+#featured .row1 .card1:hover img{
+    transform: scale(1.5);
+}
+#featured .row1 .card1 .content {
+	background: rgba(0, 0, 0, 0.4);
+	position: absolute;
+	z-index: 5;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	padding: 25px;
+}
+#featured .row1 .card1 .content h3{
+    color: var(--common1);
+    font-size: 30px;
+    line-height: 48px;
+    font-weight: 700;
+}
+#featured .row1 .card1 .content p{
+    color: var(--common1);
+    padding-bottom: 20px;
+}
+/* featured css end=============== */
+
+/* post css end=============== */
+
+#post .row2{
+    padding: 10px 0;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 25px;
+    justify-items: center;
+    padding: 10px;
+    background: var(--common1);
+}
+#post .card2{
+    width: 100%;
+    height: auto;
+    box-shadow: 0 3px 20px -5px rgba(189, 188, 188, 0.5);
+    cursor: pointer;
+    /* margin: 10px; */
+}
+#post .card2 .postimg{
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+#post .card2 .postimg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation: postImage 2s linear infinite alternate;
+}
+@keyframes postImage {
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.5);
+    }
+}
+#post .card2 .content{
+    padding: 30px;
+    background: var(--common1);
+}
+#post .card2 .content a p{
+    margin: 15px 0;
+}
+#post .card2 .content a{
+    display: block;
+    text-transform: capitalize;
+    color: var(--secondary-color);
+    padding:15px 0;
+}
+#post .pagination{
+    padding: 50px 0 20px 0;
+    text-align: center;
+}
+#post .pagination a{
+    display: inline-block;
+    color: var(--secondary-color);
+    font-size: 20px;
+    line-height: 27px;
+    padding: 5px 12px;
+    margin: 5px 0;
+    transition: all 0.3s linear;
+}
+#post .pagination a:hover{
+    color: var(--primary-color);
+    background: var(--secondary-color);
+}
+
+/* post css end=============== */  
+
+
+
+/* client side start============== */
+#client{
+    width: 100%;
+    background: none;
+}
+#client .container .clientSlider{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#client .container .clientSlider .imgbox{
+    width: 180px;
+    height: 80px;
+    margin: 20px;
+}
+#client .container .clientSlider .imgbox img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* client side End============== */
+
+
+
+
+
+@media screen and (max-width: 600px)
+{
+    #header .logo {
+        width: 150px;
+        height: auto;
+    }
+    #hero .hero-content {
+        width: 70%;
+    }
+    #about .container {
+        display: block;
+    }
+    .left {
+        justify-content: center;
+        padding: 50px 0;
+    }
+    #about .content {
+        padding-left: 0;
+    }
+    #about h2 {
+        text-align: center;
+    }
+    #about p {
+        text-align: center;
+    }
+    #post .card2{
+        margin: 10px;
+    }
+    ul {
+        text-align: center;
+    }
+    #footer .footer-logo {
+        width: 130px;
+    }
+    h1 {
+        font-size: 45px;
+        line-height: 55px;
+    }
+    h2{
+        font-size: 35px;
+        line-height: 45px;
+        padding-bottom: 25px;
+    }
+    h3{
+        font-size: 26px;
+        line-height: 40px;
+    }
+    p{
+        font-size: 16px;
+        line-height: 22px;
+    }
+    #post .row2 {
+        padding: 10px;
+    }
+    #post .card2 {
+        margin: 10px;
+    }
+    .sidebar{
+        display: none;
+    }
+}
+@media screen and (max-width: 850px) and (min-width: 600px)
+{
+    #header .logo {
+        width: 200px;
+        height: auto;
+    }
+    #about .container {
+        display: block;
+    }
+    .left {
+        justify-content: center;
+        padding: 50px 0;
+    }
+    #about .content {
+        padding-left: 0;
+    }
+    #about h2 {
+        text-align: center;
+    }
+    #about p {
+        text-align: center;
+    }
+    #post .card2{
+        margin: 10px;
+    }
+    ul {
+        text-align: center;
+    }
+    #footer .footer-logo {
+        width: 130px;
+    }
+    h1 {
+        font-size: 45px;
+        line-height: 55px;
+    }
+    h2{
+        font-size: 35px;
+        line-height: 45px;
+        padding-bottom: 25px;
+    }
+    h3{
+        font-size: 26px;
+        line-height: 40px;
+    }
+    p{
+        font-size: 16px;
+        line-height: 22px;
+    }
+    #footer .footer-logo {
+        width: 160px;
+    }
+}

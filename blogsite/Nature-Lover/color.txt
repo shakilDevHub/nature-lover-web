@@ -1,0 +1,10 @@
+Theme Color (#DDC8AF) light cream
+Theme Color 2nd H1-H6 (#2A2A2A) dark gray 
+Paragraph (#383838) gray 
+
+
+Heading 1= 50px
+Heading 2= 36px
+Heading 3= 26px
+
+body= 17 px

@@ -1,0 +1,96 @@
+/* Commone css start =============== */
+:root{
+    --primary-color: #DDC8AF;
+    --secondary-color: #2A2A2A;
+    --common1: #ffffff;
+}
+/* Commone css end =============== */
+
+#hero{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../img/privacy-hero.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* privacy start====================== */
+#privacy .content-box{
+    width: 100%;
+    border-radius: 0;
+    box-shadow: 0 3px 13px rgba(0, 0, 0, 0.25);
+    padding: 70px;
+    margin: 10px 0;
+}
+#privacy .content-box p{
+    padding-bottom: 20px;
+}
+/* privacy end====================== */
+
+@media only screen and (max-width: 600px)
+{
+    #header .logo {
+        width: 150px;
+        height: auto;
+    }
+    #hero .hero-content {
+        width: 70%;
+    }
+    #footer .footer-logo {
+        width: 130px;
+    }
+    h1 {
+        font-size: 45px;
+        line-height: 55px;
+    }
+    h2{
+        font-size: 35px;
+        line-height: 45px;
+        padding-bottom: 25px;
+    }
+    h3{
+        font-size: 26px;
+        line-height: 40px;
+    }
+    p{
+        font-size: 16px;
+        line-height: 22px;
+    }
+    #privacy .content-box{
+        box-shadow: 0 3px 13px rgba(0, 0, 0, 0.25);
+    }
+    .sidebar{
+        display: none;
+    }
+
+}
+@media only screen and (max-width: 850px) and (min-width: 600px)
+{
+    #header .logo {
+        width: 200px;
+        height: auto;
+    }
+    #footer .footer-logo {
+        width: 130px;
+    }
+    h1 {
+        font-size: 45px;
+        line-height: 55px;
+    }
+    h2{
+        font-size: 35px;
+        line-height: 45px;
+        padding-bottom: 25px;
+    }
+    h3{
+        font-size: 26px;
+        line-height: 40px;
+    }
+    p{
+        font-size: 16px;
+        line-height: 22px;
+    }
+    #footer .footer-logo {
+        width: 160px;
+    }
+}
